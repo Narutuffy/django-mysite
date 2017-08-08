@@ -1,0 +1,5 @@
+*.log
+.htaccess
+
+#ignore settings.py for security reasons
+mysite/settings.py
