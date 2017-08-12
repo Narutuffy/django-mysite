@@ -1,9 +1,9 @@
 {% extends "personal/header.html" %}
-
+{% load staticfiles %}
 {% block content %}
-	{% for post in object_list %}
-		<h2>{{ post.date|date:"Y-m-d" }} <a href=/blog/{{post.id}}> {{post.title}}</a> </h2>
+	
+		<embed src="{% static 'Vamsi_Resume.pdf' %}" type="application/pdf"   height="700px" width="100%">
 
-	{% endfor %}
+	
 
 {% endblock %}

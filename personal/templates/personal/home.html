@@ -1,8 +1,23 @@
 {% extends "personal/header.html" %}
 
+{% load staticfiles %}
+
 {% block content %}
-<p>Hey, welcome to my website gentlemen B)</p>
-
-{% include "personal/includes/htmlsnippet.html" %}
-
+	<div class="container-fluid container-about">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-img">
+				<img class="img-responsive img-rounded" src="{% static 'personal/img/profile.jpeg' %}" alt="profile_image">
+			</div>
+			<div class="col-sm-12 col-md-6 notebook">
+				<p>Hey there!</p>
+				<br>
+				<p>I'm Vamsi. I'm a full stack developer in making. I have a passion for building products which can help make this world a bit better place. </p>
+				<br>
+				<p>You'll find me constantly getting my hands dirty with something</p>	
+				<br>
+				<p>Yuge fan of Elon Musk and Roger Federer.</p>				
+			</div>
+		</div>
+	</div>
+ 
 {% endblock %}
